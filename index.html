@@ -5,7 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumalee Thai Massage</title>
     <style>
+        body {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumalee Thai Massage</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, orange, yellow);
+        }
+        header {
+            background-color: rgba(255, 165, 0, 0.8); 
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 140, 0, 0.8);
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background-color: rgba(255, 165, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sumalee Thai Massage</h1>
+    </header>
+    <nav>
+        <a href="#startseite">Startseite</a>
+        <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
+        <a href="#preise">Preise</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#impressum">Impressum</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <main>
+        <section id="startseite">
+            <h2>herzlich willkommen</h2>
+            <p>Experience the best Thai massage in town with our professional and friendly staff.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="path/to/image1.jpg" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="path/to/image2.jpg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="path/to/image3.jpg" alt="Image 3"></div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section id="sumalee-thai-massage">
+            <h2>Sumalee Thai Massage</h2>
+            <p>Information about Sumalee Thai Massage.</p>
+        </section>
+        <section id="preise">
+            <h2>Preise</h2>
+            <p>Here are our prices.</p>
+        </section>
+        <section id="galerie">
+            <h2>Galerie</h2>
+            <p>Check out our gallery.</p>
+        </section>
+        <section id="impressum">
+            <h2>Impressum</h2>
+            <p>Legal information about our business.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Get in touch with us.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chuan's Thai Massage</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Adresse</h3>
+                <p>Bertha-von-Suttner-Straße<br>751373 Leverkusen, Deutschland</p>
+            </div>
+            <div class="contact-item">
+                <h3>Telefon</h3>
+                <p>+49 176 64915710</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>info@chuansthaimassage.de</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
+
             margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, orange, yellow);
