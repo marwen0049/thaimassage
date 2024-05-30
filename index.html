@@ -36,21 +36,8 @@
         nav a:hover {
             text-decoration: underline;
         }
-        nav .menu-toggle {
-            display: none;
-            background-color: #ff6d00;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 18px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-        }
-        nav .menu-toggle:hover {
-            background-color: #ff8c1a;
-        }
+        
+        
         main {
             padding: 20px;
             padding-top: 60px; /* Compensate for fixed navbar */
@@ -120,12 +107,29 @@
             nav.expanded {
                 max-height: 500px; /* Taille suffisamment grande pour afficher tous les liens */
             }
+            .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
         }
     </style>
 </head>
 <body>
     <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        
         <a href="#startseite">Startseite</a>
         <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
         <a href="#preise">Preise</a>
@@ -182,9 +186,21 @@ Die gezielte Massage dieser Bereiche löst diese Verspannungen und führt zu Ent
             </div>
         </section>
         <section id="galerie">
-            <h2>Galerie</h2>
-            <p>Check out our gallery.</p>
-        </section>
+    <h2>Galerie</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="photo1.jpg" alt="Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="photo2.jpg" alt="Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+        <!-- Ajoutez autant de photos que nécessaire -->
+    </div>
+</section>
+
     </main>
     <footer id="kontakt">
         <p>&copy; 2024 Chuan's Thai Massage</p>
