@@ -9,6 +9,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, orange, yellow);
+            color: #333; /* Couleur de texte principale */
         }
         header {
             background-color: rgba(255, 165, 0, 0.8); 
@@ -31,9 +32,10 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease; /* Transition pour le changement de couleur au survol */
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700; /* Couleur au survol */
         }
         main {
             padding: 20px;
@@ -41,6 +43,7 @@
         }
         section {
             padding: 20px 0;
+            margin-bottom: 40px; /* Espacement entre les sections */
         }
         footer {
             background-color: rgba(255, 165, 0, 0.8);
@@ -61,6 +64,25 @@
             width: 100vw;
             height: 100vh;
             object-fit: cover;
+        }
+        h1, h2, h3 {
+            color: #ff6d00; /* Couleur des titres */
+        }
+        ul {
+            list-style-type: none; /* Supprimer les puces de la liste */
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        ul li:before {
+            content: "\2022"; /* Utiliser un point noir comme puce */
+            color: #ff6d00; /* Couleur de la puce */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
@@ -88,14 +110,13 @@
             <p>Sumalee Thai Massage offers you an authentic experience of traditional Thai massage techniques, handed down through generations, providing relaxation and rejuvenation to your body and mind. Our skilled therapists are dedicated to delivering the highest quality of service to ensure your utmost satisfaction and well-being.</p>
         </section>
         <section id="preise">
-    <h2>Für ein entspanntes Erlebnis</h2>
-    <ul>
-        <li>30 Minuten - 20 Euro</li>
-        <li>60 Minuten - 60 Euro</li>
-        <li>90 Minuten - 70 Euro</li>
-    </ul>
-</section>
-
+            <h2>Für ein entspanntes Erlebnis</h2>
+            <ul>
+                <li>30 Minuten - 20 Euro</li>
+                <li>60 Minuten - 60 Euro</li>
+                <li>90 Minuten - 70 Euro</li>
+            </ul>
+        </section>
         <section id="galerie">
             <h2>Galerie</h2>
             <p>Check out our gallery.</p>
@@ -110,7 +131,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Sumalee Thai Massage</p>
+        <p>&copy; 2024 Chuan's Thai Massage</p>
         <div class="contact-info">
             <div class="contact-item">
                 <h3>Adresse</h3>
