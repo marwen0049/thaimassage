@@ -40,14 +40,17 @@
         footer {
             background-color: rgba(255, 165, 0, 0.8);
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
             color: white;
         }
         .contact-info {
-            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            text-align: left;
         }
     </style>
 </head>
@@ -92,9 +95,18 @@
     <footer>
         <p>&copy; 2024 Chuan's Thai Massage</p>
         <div class="contact-info">
-            <p>Adresse: Bertha-von-Suttner-Straße, 751373 Leverkusen, Deutschland</p>
-            <p>Telefon: +49 176 64915710</p>
-            <p>Email: info@chuansthaimassage.de</p>
+            <div class="contact-item">
+                <h3>Adresse</h3>
+                <p>Bertha-von-Suttner-Straße<br>751373 Leverkusen, Deutschland</p>
+            </div>
+            <div class="contact-item">
+                <h3>Telefon</h3>
+                <p>+49 176 64915710</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>info@chuansthaimassage.de</p>
+            </div>
         </div>
     </footer>
 </body>
