@@ -25,6 +25,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            transition: max-height 0.3s ease-out;
         }
         nav a {
             margin: 0 15px;
@@ -34,6 +35,21 @@
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        nav .menu-toggle {
+            display: none;
+            background-color: #ff6d00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        nav .menu-toggle:hover {
+            background-color: #ff8c1a;
         }
         main {
             padding: 20px;
@@ -89,6 +105,8 @@
             nav {
                 flex-direction: column;
                 align-items: center;
+                max-height: 60px;
+                overflow: hidden;
             }
             nav a {
                 margin: 10px 0;
@@ -96,12 +114,18 @@
             main {
                 padding-top: 140px; /* Pour compenser une barre de navigation plus haute */
             }
+            nav .menu-toggle {
+                display: block;
+            }
+            nav.expanded {
+                max-height: 500px; /* Taille suffisamment grande pour afficher tous les liens */
+            }
         }
     </style>
 </head>
 <body>
-    
     <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
         <a href="#startseite">Startseite</a>
         <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
         <a href="#preise">Preise</a>
