@@ -58,8 +58,8 @@
             text-align: left;
         }
         img.responsive {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: auto;
             object-fit: cover;
         }
         .price {
@@ -81,10 +81,26 @@
         .price-btn:hover {
             background-color: #ff8c1a;
         }
+
+        /* Media queries pour la mise en page responsive */
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            main {
+                padding-top: 140px; /* Pour compenser une barre de navigation plus haute */
+            }
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Sumalee Thai Massage</h1>
+    </header>
     <nav>
         <a href="#startseite">Startseite</a>
         <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
