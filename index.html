@@ -9,23 +9,22 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, orange, yellow);
-            padding-top: 60px; /* Ajout d'un padding pour compenser la hauteur de la barre de menu fixe */
         }
         header {
             background-color: rgba(255, 165, 0, 0.8); 
             padding: 20px;
             text-align: center;
             color: white;
-            position: fixed; /* Rend la barre de menu fixe en haut de la page */
-            width: 100%; /* La barre de menu occupe toute la largeur de la page */
-            top: 0; /* Positionne la barre de menu en haut de la page */
-            z-index: 1000; /* Assure que la barre de menu soit au-dessus du reste du contenu */
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: rgba(255, 140, 0, 0.8);
             padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             margin: 0 15px;
@@ -38,7 +37,7 @@
         }
         main {
             padding: 20px;
-            padding-top: 100px; /* Ajout d'un padding pour compenser la hauteur de la barre de menu fixe */
+            padding-top: 60px; /* Compensate for fixed navbar */
         }
         section {
             padding: 20px 0;
@@ -67,7 +66,7 @@
 </head>
 <body>
     <header>
-        <!-- Le titre a été supprimé -->
+        <h1>Sumalee Thai Massage</h1>
     </header>
     <nav>
         <a href="#startseite">Startseite</a>
