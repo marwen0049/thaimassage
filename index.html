@@ -36,8 +36,6 @@
         nav a:hover {
             text-decoration: underline;
         }
-        
-        
         main {
             padding: 20px;
             padding-top: 60px; /* Compensate for fixed navbar */
@@ -101,40 +99,47 @@
             main {
                 padding-top: 140px; /* Pour compenser une barre de navigation plus haute */
             }
-            
             nav.expanded {
                 max-height: 500px; /* Taille suffisamment grande pour afficher tous les liens */
             }
-            .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.gallery-item {
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 24px;
+                color: white;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <nav>
-        
-        <a href="#startseite">Startseite</a>
-        <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
-        <a href="#preise">Preise</a>
-        <a href="#angebot">Angebot</a>
-        <a href="#galerie">Galerie</a>
-        <a href="Impressum.html">Impressum</a>
-        <a href="#kontakt">Kontakt</a>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="menu-links">
+            <a href="#startseite">Startseite</a>
+            <a href="#sumalee-thai-massage">Sumalee Thai Massage</a>
+            <a href="#preise">Preise</a>
+            <a href="#angebot">Angebot</a>
+            <a href="#galerie">Galerie</a>
+            <a href="Impressum.html">Impressum</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
     </nav>
     <main>
         <section id="startseite">
@@ -216,6 +221,15 @@ Die gezielte Massage dieser Bereiche löst diese Verspannungen und führt zu Ent
                 <p>sumaleesthaimassage@gmail.com</p>
             </div>
         </div>
+        <div>
+            <img src="logo.png" alt="Logo" style="max-width: 100px;">
+        </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('expanded');
+        }
+    </script>
 </body>
 </html>
